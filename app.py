@@ -77,14 +77,6 @@ if "air_time" in df.columns:
 else:
     st.warning("⚠️ 'air_time' column not found! Unable to analyze suspicious flights.")
 
-# Flight Path Map
-if "latitude" in df.columns and "longitude" in df.columns:
-    st.write("## 🌍 Flight Path Visualization")
-    if st.button("Show Flight Map"):
-        st.map(df[["latitude", "longitude"]].dropna())
-else:
-    st.warning("⚠️ 'latitude' and 'longitude' columns not found! Skipping flight map.")
-
 st.sidebar.markdown("📌 **Tip:** Click the buttons above to explore different insights!")
 
 # Footer
