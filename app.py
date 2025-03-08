@@ -6,7 +6,7 @@ import seaborn as sns
 # Load dataset from GitHub
 @st.cache_data
 def load_data():
-    url = "https://raw.githubusercontent.com/yourusername/your-repo/main/flights.csv"  # Change to your GitHub CSV URL
+    url = "https://raw.githubusercontent.com/itsmemauliii/DreamUnique/main/flightsdetails.csv"  
     df = pd.read_csv(url)
     return df
 
